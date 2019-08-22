@@ -1,0 +1,248 @@
+@import '../../scss/mixin';
+
+header {
+  padding: 14px 14px 0;
+  -webkit-box-shadow: 0px 8px 14px -4px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 8px 14px -4px rgba(0, 0, 0, 0.16);
+  position: relative;
+}
+
+header.bg-light {
+  background: #fbfbfb !important;
+}
+
+form.form-inline.search {
+  display: inline-block;
+  width: auto;
+}
+
+.search-wrapper {
+  width: auto;
+  height: auto;
+  display: inline-block;
+}
+
+a.navbar-brand {
+  font-size: 18px;
+  font-weight: 600;
+  color: $fill-green !important;
+}
+
+.header-top-area input.form-control {
+  font-size: 14px;
+  font-weight: 500;
+  color: #707070;
+  border-color: $fill-light-gray;
+  height: 40px;
+}
+
+.search .input-group {
+  display: flex;
+}
+
+.search input.form-control {
+  width: 140px;
+}
+
+.input-group .input-group-text {
+  background: #ECEEEF;
+  border-color: $fill-light-gray;
+}
+
+span#search {
+  cursor: pointer;
+}
+
+span#search i {
+  color: #808080;
+  transition: all 0.2s ease;
+}
+
+span#search:hover i {
+  color: $text-dark;
+}
+
+.login-part {
+  float: right;
+}
+
+.login-part form {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+
+.login-part .input-group {
+  width: 182px;
+  margin-right: 20px;
+}
+
+.login-part .input-group-text {
+  color: #808080;
+}
+
+.login-part .input-group .input-group-text {
+  background: transparent;
+  border-right: 0;
+  padding-right: 8px;
+}
+
+.login-part input.form-control {
+  border-left: 0;
+  padding-left: 4px;
+}
+
+.header-top-area {
+  display: flex;
+  flex-direction: row;
+}
+
+.top-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.forgotPassword-wrapper {
+  text-align: center;
+}
+
+a.forgotPassword {
+  font-size: 12px;
+  transition: all 0.2s ease;
+}
+
+a.forgotPassword:hover {
+  color: $text-dark;
+}
+
+.login-wrapper .input-group {
+  margin-bottom: 10px;
+}
+
+.btn-wrapper .btn {
+  margin: 0 10px 10px;
+}
+
+
+
+
+
+
+nav.navbar.navbar-expand-lg {
+  padding: 0;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:hover {
+  cursor: pointer;
+}
+
+.navbar-toggler {
+  color: rgb(255, 255, 255);
+  border-color: rgba(255, 255, 255, 1);
+}
+
+//hamburger menu style
+button.navbar-toggler {
+  position: relative;
+  display: block;
+  background: 0 0;
+  outline: 0;
+  transition: all 0.3s ease;
+  width: 44px;
+  height: 34px;
+  cursor: pointer;
+}
+
+button span.line {
+  position: relative;
+  height: 2px;
+  background: $dark-secondary-color;
+  width: 100%;
+  display: block;
+  margin: 4px 0;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  transition: all 0.3s ease;
+}
+
+button.navbar-toggler:hover span.line {
+  background: rgba(112, 112, 112, 0.7);
+}
+
+button.navbar-toggler {
+  color: unset;
+  border: 0;
+}
+
+button.navbar-toggler[aria-expanded=true] .line:nth-child(1) {
+  transform: translateY(6px) rotate(-135deg);
+}
+
+button.navbar-toggler[aria-expanded=true] .line:nth-child(2) {
+  transform: translateY(0) rotate(135deg);
+  opacity: 0;
+}
+
+button.navbar-toggler[aria-expanded=true] .line:nth-child(3) {
+  transform: translateY(-6px) rotate(135deg);
+}
+
+.collapsing {
+  transition: all 0.3s ease;
+}
+
+.dropdown-menu {
+  border: 0;
+  box-shadow: 0px 8px 14px -4px rgba(0, 0, 0, 0.16)
+}
+
+.dropdown-item.active,
+.dropdown-item:active,
+.dropdown-item:focus {
+  background: transparent;
+}
+
+.dropdown-menu a.dropdown-item.nav-link {
+  color: $dark-secondary-color;
+}
+
+
+/* navigation bar close */
+@media (min-width: 992px) {
+  button.navbar-toggler {
+    display: none;
+  }
+}
+
+
+li.nav-item .nav-link {
+  font-size: 14px;
+  color: $fill-green;
+  transition: all 0.2s ease;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+  color: $fill-dark;
+  font-weight: 700;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: $fill-green;
+  font-weight: 500;
+  padding: 16px 20px;
+  font-size: 14px;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link:hover {
+  color: $fill-dark;
+}

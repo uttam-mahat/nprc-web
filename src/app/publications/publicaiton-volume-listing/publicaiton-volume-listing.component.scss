@@ -1,0 +1,57 @@
+@import '../../../scss/mixin';
+
+.archive-detail .section-wrapper {
+  background: #f8f8f8;
+  padding: 24px !important;
+  border-radius: 6px;
+}
+
+.archive-detail .section-wrapper {
+  padding: 0;
+}
+
+.archive-detail .journal-item div.author-name {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.archive-detail .journal-item div.author-name a:hover {
+  color: $text-blue-secondary;
+}
+
+.archive-detail .journal-item {
+  padding: 12px 0;
+}
+
+.journal-meta-item .icon.crown i {
+  color: $fill-orange;
+}
+
+.archive-detail .journal-meta-item span {
+  font-weight: 600;
+  color: $text-dark;
+}
+
+.archive-detail .journal-meta-item i {
+  color: $text-dark;
+}
+
+.btn-journalDownload .btn span {
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 8px;
+}
+
+.btn-journalDownload {
+  margin: 10px 0;
+}
+
+.btn-journalDownload .btn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.btn-journalDownload .btn i {
+  font-size: 18px;
+}

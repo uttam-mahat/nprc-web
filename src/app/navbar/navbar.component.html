@@ -1,0 +1,100 @@
+<header class="navbar-light bg-light">
+  <div class="container">
+    <div class="header-top-area">
+      <a class="navbar-brand" routerLink="/">
+        SAMAG
+        <!-- <img src="../../assets/img/nprc_logo.png" class="logo" alt=""> -->
+      </a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+
+      <div class="top-wrapper">
+        <div class="search-wrapper">
+          <form class="form-inline search">
+            <div class="input-group">
+              <input type="search" class="form-control" placeholder="Search..." aria-label="search"
+                aria-describedby="search">
+              <div class="input-group-append">
+                <span class="input-group-text" id="search">
+                  <i class="fa fa-search" aria-hidden="true"></i>
+                </span>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="login-part">
+          <div class="login-wrapper">
+            <form>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="emailAddress">
+                    <i class="fas fa-user"></i>
+                  </span>
+                </div>
+                <input type="email" class="form-control" placeholder="Email Address" aria-label="emailAddress"
+                  aria-describedby="emailAddress">
+              </div>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="emailAddress">
+                    <i class="fas fa-lock"></i>
+                  </span>
+                </div>
+                <input type="password" class="form-control" placeholder="Password" aria-label="password"
+                  aria-describedby="password">
+              </div>
+              <div class="btn-wrapper">
+                <button type="submit" class="btn btn-rounded btn-outline btn-green fill-green">Log In</button>
+                <button type="button" class="btn btn-rounded btn-outline btn-green btn-transparent">Register</button>
+              </div>
+            </form>
+          </div>
+          <div class="forgotPassword-wrapper">
+            <a href="#" class="forgotPassword"> Forgot Password ?</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="divider"></div>
+    <nav class="navbar navbar-expand-lg">
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+            <a class="nav-link" routerLink="">Home</a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+            <a class="nav-link" routerLink="/about-us">About Us</a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+            <a class="nav-link" routerLink="/e-submission">e-Submission </a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+            <a class="nav-link" routerLink="/publications">Publications </a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+            <a class="nav-link" routerLink="/notices">Notices and Announcements </a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+            <a class="nav-link" routerLink="/join-us">Join Us</a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+            <a class="nav-link" routerLink="/blog">Blog</a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+            <a class="nav-link" routerLink="/faq">FAQs</a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}">
+            <a class="nav-link" routerLink="/contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
